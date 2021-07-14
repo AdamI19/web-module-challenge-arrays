@@ -46,12 +46,13 @@ Use the copy function below to do the following:
 */
 //add your parameter - I would call it array
 function copy(array){
+  const arraycopy =[...array];
 
   // return a copy of the original using the spread operator
-  
+  return arraycopy;
 }    
 
-
+console.log('task 1', addFlavor(originalFlavors ));
 
 
 
@@ -109,9 +110,14 @@ Use the removeLastFlavor function below to do the following:
   For example: running removeLastFlavor(originalFlavors) would return ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla"]
 */
 //1 param which is an array
+
+console.log('task 4', removeLastFlavor(originalFlavors));
+
 function removeLastFlavor(array){
   // remove the last item from the array using  .pop()
  //return the array
+ array.pop();
+ return array;
 
 }
 
