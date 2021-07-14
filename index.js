@@ -67,14 +67,20 @@ For Example: is31Flavors(originalFlavors) will return true if your code is worki
 */
 
 //taking 1 parameter which is an array so I would call it array
+console.log('task 2', is31Flavors(originalFlavors));
+console.log (originalFlavors.length);
+
 function is31Flavors(array){
+  originalFlavors.length; 
+
 
 
 
   //we need an if statement to check that the length of the array is 31 flavours if it is we want to display true (boolean -no quotes)
   // else we want to return false
- /*your code here*/
+ 
 }
+
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Corporate has come to you with an idea for a new flavor: Rainbow Sherbert! They think this will be a game changer. You need to modify the array to include this flavor. 
