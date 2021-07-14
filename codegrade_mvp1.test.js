@@ -176,6 +176,7 @@ describe('filterByWord', ()=>{
             'Chocolate Fudge',
             'Chocolate Mint',
             'Chocolate Ribbon'
+            
           ]);
     })
 });
