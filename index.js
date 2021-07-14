@@ -46,13 +46,13 @@ Use the copy function below to do the following:
 */
 //add your parameter - I would call it array
 function copy(array){
-  const arraycopy =[...array];
+  return [...array];
 
   // return a copy of the original using the spread operator
-  return arraycopy;
+  
 }    
 
-console.log('task 1', addFlavor(originalFlavors ));
+console.log('task 1', copy(originalFlavors ));
 
 
 
@@ -67,11 +67,14 @@ For Example: is31Flavors(originalFlavors) will return true if your code is worki
 */
 
 //taking 1 parameter which is an array so I would call it array
-console.log('task 2', is31Flavors(originalFlavors));
-console.log (originalFlavors.length);
+
 
 function is31Flavors(array){
-  originalFlavors.length; 
+  if (array.length ===31){
+    return true;
+  }else{
+    return false;
+  }
 
 
 
@@ -80,7 +83,7 @@ function is31Flavors(array){
   // else we want to return false
  
 }
-
+console.log('task 2', is31Flavors(originalFlavors));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Corporate has come to you with an idea for a new flavor: Rainbow Sherbert! They think this will be a game changer. You need to modify the array to include this flavor. 
@@ -98,7 +101,7 @@ Use the addFlavor function below to do the following:
 function addFlavor(array, string){
   //we need to add the string to the front of the array -use unshift for this
   //return the array
- array.unshift();
+ array.unshift(string);
  return array;
  
 }
